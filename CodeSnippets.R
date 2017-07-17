@@ -14,3 +14,17 @@ sample(USstatePops$V1,size=16,replace=TRUE)
 
 #R has a variety of ways of repeating an activity. One of the easiest ones to use is the replicate() function.
 replicate(4, mean(sample(USstatePops$V1,size=16,replace=TRUE)),simplify=TRUE)
+
+
+
+
+
+
+#URLS
+#Interactive web elements: http://www.web-maps.com/gisblog/?p=2365
+#rMaps: http://rmaps.github.io/
+#Great tutorial on maps: https://github.com/Robinlovelace/Creating-maps-in-R
+#Another maps example: https://ropensci.org/usecases/spocc_gistmap.html
+#Leaflets: https://blog.rstudio.com/2015/06/24/leaflet-interactive-web-maps-with-r/
+
+
