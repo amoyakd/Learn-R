@@ -28,3 +28,5 @@ replicate(4, mean(sample(USstatePops$V1,size=16,replace=TRUE)),simplify=TRUE)
 #Leaflets: https://blog.rstudio.com/2015/06/24/leaflet-interactive-web-maps-with-r/
 
 
+#Miscellaneous
+https://mentalmodels4life.net
