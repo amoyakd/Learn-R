@@ -15,6 +15,15 @@ sample(USstatePops$V1,size=16,replace=TRUE)
 #R has a variety of ways of repeating an activity. One of the easiest ones to use is the replicate() function.
 replicate(4, mean(sample(USstatePops$V1,size=16,replace=TRUE)),simplify=TRUE)
 
+#a numerical minimisation tool called Newton-Raphson search. The intuition of Newton-Raphson is pretty simple: 
+#you pick a starting point and look around for the steepest slope. You then ski down that slope a little way, 
+#and then repeat again and again, until you can’t go any lower. In R, we can do that with optim():
+optim(<start point>, <cost function> , <data>)
+
+#Example
+best <- optim(c(0, 0), measure_distance, data = sim1)
+best$par
+
 
 
 
