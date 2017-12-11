@@ -25,7 +25,15 @@ best <- optim(c(0, 0), measure_distance, data = sim1)
 best$par
 
 
-
+## LINEAR REGRESSION ######
+coef(<model>) is used to retreive the co-efficients
+#In order to obtain a confidence interval for the coefficient estimates, we can use the confint() command.
+confint(<model>
+#The predict() function can be used to produce confidence intervals and predict() prediction intervals for the prediction of medv for a given value of lstat.
+predict(<model>, <Data>, interval = "confidence/prediction") 
+predict (lm.fit ,data.frame(lstat=c(5 ,10 ,15) ), interval ="confidence")
+#plot lin reg line
+abline(<model>)
 
 
 
