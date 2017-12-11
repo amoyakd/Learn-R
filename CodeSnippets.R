@@ -34,8 +34,18 @@ predict(<model>, <Data>, interval = "confidence/prediction")
 predict (lm.fit ,data.frame(lstat=c(5 ,10 ,15) ), interval ="confidence")
 #plot lin reg line
 abline(<model>)
+#Plotting the various residuals 
+> par(mfrow =c(2,2))
+> plot(lm.fit)
+#Alternative approach
+> plot(predict (lm.fit), residuals (lm.fit))
+> plot(predict (lm.fit), rstudent (lm.fit))
 
-
+#Anova() can be used to compare two models
+anova(<model 1>, <model 2)
+#The anova() function performs a hypothesis test comparing the two models. The null hypothesis is that the two models fit the data 
+#equally well, and the alternative hypothesis is that the full model is superior. If the F-statistic is large and the 
+#associated p-value is virtually zero, then it provides very clear evidence that the model 2 is far superior to model 1
 
 #URLS
 #Interactive web elements: http://www.web-maps.com/gisblog/?p=2365
