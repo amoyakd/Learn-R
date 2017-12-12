@@ -42,10 +42,21 @@ abline(<model>)
 > plot(predict (lm.fit), rstudent (lm.fit))
 
 #Anova() can be used to compare two models
-anova(<model 1>, <model 2)
+anova(<model 1>, <model 2>)
 #The anova() function performs a hypothesis test comparing the two models. The null hypothesis is that the two models fit the data 
 #equally well, and the alternative hypothesis is that the full model is superior. If the F-statistic is large and the 
 #associated p-value is virtually zero, then it provides very clear evidence that the model 2 is far superior to model 1
+        
+        
+#To draw pair-wise correlation plots for all vataibles in a df
+pairs(<data frame>)
+#To get correlation matrix
+cor(subset(<data frame>))
+#Visual cor plot
+qtlcharts::iplotCorr(<df>)
+        
+        
+        
 
 #URLS
 #Interactive web elements: http://www.web-maps.com/gisblog/?p=2365
