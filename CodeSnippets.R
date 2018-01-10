@@ -56,6 +56,19 @@ cor(subset(<data frame>))
 qtlcharts::iplotCorr(<df>)
         
         
+
+#To omit rows that contain NA in any column/variable
+na.omit(<data frame>)
+
+#To perform best subset selection using RSS measure
+model <- leaps::regsubsets(<model formula>, <data>)
+summary(model)
+#An asterisk in the esult indicates that a given variable is included in the corresponding
+#model. By default, regsubsets() only reports results up to the best eight-variable model. But the nvmax option can be used
+#in order to return as many variables as are desired. Here we fit up to a 19-variable model.
+model <- leaps::regsubsets(<model formula>, <data>, nvmax = 19)
+        
+        
         
 
 #URLS
