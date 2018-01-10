@@ -67,8 +67,8 @@ summary(model)
 #model. By default, regsubsets() only reports results up to the best eight-variable model. But the nvmax option can be used
 #in order to return as many variables as are desired. Here we fit up to a 19-variable model.
 model <- leaps::regsubsets(<model formula>, <data>, nvmax = 19)
-        
-        
+#The summary() function also returns R2, RSS, adjusted R2, Cp, and BIC. Use $ sign to get the resp variable     
+plot(reg.summary$rss ,xlab=" Number of Variables ",ylab=" RSS", type="l")  
         
 
 #URLS
